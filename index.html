@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+        }
+
+        td,
+        th {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid rgb(66, 180, 62);
+            color: rgb(19, 195, 201);
+        }
+    </style>
 </head>
-<body>
+
+<body style="background-color: black; color: white; font-family: Arial, sans-serif;">
     <h1>Welcome to the Fetch API Practice</h1>
     <div id="data">
         <p>Loading...</p>
@@ -22,6 +37,7 @@
                         <th>Designation</th>
                         <th>Phone</th>
                         <th>University</th>
+                        <th>Image</th>
 
                     </tr>
                 </thead>
@@ -34,4 +50,5 @@
     </div>
     <script src="./fetch.js"></script>
 </body>
+
 </html>

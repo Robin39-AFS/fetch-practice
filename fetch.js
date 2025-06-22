@@ -7,7 +7,7 @@ fetch("https://dummyjson.com/users")
     .then(data =>{
         // console.log(data);
         const users = data.users;
-        console.log(users[1]);
+        console.log(users[2]);
         const userList = document.getElementById("user-list");
         userList.innerHTML = "";
         users.map(value =>{
@@ -21,6 +21,8 @@ fetch("https://dummyjson.com/users")
                 <td>${value.company.title}</td>
                 <td>${value.phone}</td>
                 <td>${value.university}</td>
+                <td><img src = "${value.image}" alt = "${value.firstName} image"></td>
+                
             `;
             // Append the row to the user list
             userList.appendChild(row);
